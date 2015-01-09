@@ -1,0 +1,10 @@
+<% @beans.each do |bean| %>
+	<p><%= bean.name %>
+	<%= bean.roast %>
+	<%= bean.origin %>
+	<%= bean.quantity %>
+	<%= link_to "Check out this bean", bean_path(bean) %>
+	</p>
+	<% end %>
+
+	<%= link_to "Add a New Bean", beans_new_path %>

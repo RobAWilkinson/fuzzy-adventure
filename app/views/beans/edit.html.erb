@@ -1,0 +1,14 @@
+<h1>Edit this coffee!</h1>
+
+    <%= form_for @bean do |f| %>
+
+        Name: <%= f.text_field :name %>
+        Roast: <%= f.text_field :roast %>
+        Origin: <%= f.text_field :origin %>
+        Quantity: <%= f.number_field :quantity %>
+
+        <%= f.submit "Submit these changes!" %>
+
+    <% end %></br>
+
+    <%= link_to "Back to the list of beans!", beans_path %>
